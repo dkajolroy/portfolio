@@ -1,0 +1,540 @@
+
+/* --------------------------------------------
+    Template Name: Kajol Roy
+    Tempate URL: https://github.com/ikajolroy/Kajolroy
+    Discription: Creative / Prortfolio / company multi page Template
+    Author: Kajol Roy
+    Author URL: http://facebook.com/ikajolroy
+    Lincense: standerd Public lincense version 1.0
+    License URL: https://github.com/ikajolroy/Kajolroy
+    Version: 1.0
+
+-------------------------------------------------
+
+1. Typography 
+2. Header-area
+    2.0 nav
+    2.1 Banar
+3. Service section
+4. Portfolio section
+5. Skills sectin
+6. Our Project Demo section
+7. About section
+9. Contact section
+10. Footer section 
+
+------------------------------------------------- */
+
+
+
+
+
+/* --------------------------- 1. Typography --------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    font-family: var(--bs-font-sans-serif);
+    color: #ffff;
+}
+h2{font-weight: bold; max-width: 55%; margin: 0 auto;}
+h6{color: tomato; margin: 10px 0;}
+ul{ 
+    list-style: none;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.top> p{
+    max-width: 50%;
+    margin: 20px auto;
+    font-size: 14px;
+}
+
+p{
+    color: #fff;
+}
+
+.width{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.simple-border{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 10px auto;
+    border: 1px solid tomato;
+    position: relative;
+}
+.simple-border::before{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: tomato;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.simple-border::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: tomato;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* ----------------- 2. Header-area
+    2.0 nav ------------------ */
+header{
+    overflow: hidden;
+}
+
+nav{
+    background-color: #1F2235;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+nav .logo{
+    width: 25%;
+    float: left;
+}
+
+nav .menu{
+    width: 75%;
+    float: right;
+}
+nav .menu .main-menu{
+    float: right;
+    margin: 0;
+}
+nav .logo h1{
+    font-size: 15px;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+nav .logo h1 span{
+    font-size: 22px;
+    color: #77e154;
+    font-weight: bold;
+}
+
+nav .main-menu li{
+    display: inline-block;
+    padding: 20px 0;
+}
+
+nav .main-menu li a{
+    display: block;
+    padding: 5px 8px;
+    font-size: 13px;
+}
+
+nav .main-menu li a:hover{
+    color: #77e154;
+    background-color: rgba(255, 255, 255, 0.172);
+    border-radius: 5px;
+}
+
+
+
+/* ----------------- 2. Header-area
+    2.0 Banar section ------------------ */
+
+
+.banar-area{
+    overflow: hidden;
+    position: relative;
+    background-color: #23263A;
+}
+
+
+
+.banar-area .item{
+    width: 100%;
+    height: 95vh;
+    position: relative;
+}
+
+.banar-area .item img{
+    position: absolute;
+    width: 400px;
+    right: 33%;
+    transform: translateX(+50%);
+    bottom: 0;
+}
+
+.banar-area .heading{
+    width: 100%;
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 44;
+}
+
+.banar-area .heading ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.banar-area .heading ul li{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ff3434;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.banar-area .heading ul li::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(red, blue);
+    transform: scale(0);
+    transition: .4s;
+    z-index: -1;
+}
+
+.banar-area .heading ul li:hover::after{
+    transform: scale(1);
+}
+
+.banar-area .heading ul a{
+    font-size: 14px;
+    padding: 10px;
+    display: flex;
+}
+
+
+
+.banar-area .heading ul li:hover i{
+    transform: rotate(360deg) scale(1.5);
+    transition: .5s;
+    color: #fff;
+}
+
+
+.banar-area .typejs h2{
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    margin: 20px 0 0;
+}
+
+.banar-area .heading p{
+    max-width: 400px;
+    margin: 35px 0;
+}
+
+.banar-area .heading .portfolio{
+    padding: 10px 15px;
+    border: 1px solid #ff3434;
+    font-size: 12px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.banar-area .heading .portfolio:hover{
+    color: #fff;
+}
+
+.banar-area .heading .portfolio::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border: 1px solid red;
+    border-radius: 30px;
+    transform: scaleX(0);
+    transform-origin: left;
+    visibility: hidden;
+}
+
+.banar-area .heading .portfolio:hover::after{
+    visibility: visible;
+    transform: scaleX(1);
+    transition: .4s;
+}
+
+
+
+.banar-area .heading .social-icon{
+    background: red;
+    padding: 8px 25px;
+    border-radius: 30px;
+    margin-left: 15px;
+    transition: .4s;
+}
+
+.banar-area .heading .social-icon:hover{
+    color: red;
+    background-color: #fff;
+}
+
+
+
+/* ------------------------3. Service section----------------------------*/
+
+
+.service{
+    background-color: #1F2235;
+    padding: 50px 0;
+}
+
+.service .top{
+    text-align: center;
+}
+
+
+.service .bottom .item{
+    width: 95%;
+    background-color: #23263A;
+    margin: 0 auto;
+    padding: 20px 10px;
+    margin: 20px auto;
+}
+
+.service .bottom .item img{
+    width: 40px;
+}
+
+.service .bottom .item h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.service .bottom .item p{
+    font-size: 13px;
+}
+
+
+
+/* ----------------- rating section ------------------ */
+
+.rating{
+    background-image: url(images/parallax2.jpg);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+
+.rating::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #09103e75;
+    z-index: -1;
+}
+
+.rating .item{
+    padding: 50px 0;
+}
+
+.rating .item i{
+    font-size: 40px;
+    color: #E93E30;
+}
+
+.rating .item .counter{
+    font-family: serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+/* ----------------- 4. Portfolio section ------------------ */
+
+
+.portfolio{
+    background-color: #23263A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------- 4. project-demo ------------------ */
+
+
+.project{
+    background-color: #23263A;
+    padding: 50px 0;
+}
+
+.project .top{
+    text-align: center;
+    color: #fff;
+}
+
+.project .center {text-align: center;}
+.project .center ul li {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.project .center ul li button{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #313657;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+}
+.project .center ul li button:hover{
+    background-color: #454c76;
+    color: #fff;
+}
+
+
+
+.project .bottom li{
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.project .bottom figure{
+    background-color: #313657;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.501);
+    overflow: hidden;
+    position: relative;
+}
+
+.project .bottom figure::after{
+    content: "View Demo";
+    width: 100%;
+    height: 48%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(142, 139, 211);
+    display: block;
+    text-align: center;
+    padding: 25% 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px #000;
+    color: #fff;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .4s;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.project .bottom figure:hover::after{
+    transform: scaleY(1);
+    visibility: visible;
+}
+.project .bottom figure:active:focus{
+    visibility: hidden;
+}
+
+.project .bottom figure:hover a{
+    color: #fff;
+}
+
+.project .bottom li figcaption{
+    text-transform: none;
+    font-size: 13px;
+    padding: 5px;
+    font-weight: bold;
+}
+.project .bottom img{
+    width: 100%;
+    height: 100%;
+}
+
+.project .bottom p{
+    text-transform: capitalize;
+    font-size: 11px;
+    padding: 5px;
+    margin: 0;
+}
+
+.project .bottom p span{
+    font-weight: bold;
+}
+.project .bottom li a:nth-of-type(2){
+    display: block;
+    font-size: 14px;
+    width: 35%;
+    padding: 5px;
+    text-transform: capitalize;
+    background: rgb(84, 89, 124);
+    float: left;
+    margin: 10px;
+}
+.project .bottom li a:nth-of-type(3){
+    display: block;
+    font-size: 14px;
+    width: 35%;
+    padding: 5px;
+    text-transform: capitalize;
+    background: rgb(84, 89, 124);
+    float: right;
+    margin: 10px;
+}
+
+.project .bottom li a:nth-of-type(2):hover{
+    background-color: rgb(112, 118, 163);
+    color: #fff;
+}
+.project .bottom li a:nth-of-type(3):hover{
+    background-color: rgb(112, 118, 163);
+    color: #fff;
+}
