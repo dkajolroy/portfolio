@@ -251,7 +251,7 @@ nav .main-menu li a:hover{
     margin: 35px 0;
 }
 
-.banar-area .heading .portfolio{
+.banar-area .heading .portfoliobtn{
     padding: 10px 15px;
     border: 1px solid #ff3434;
     font-size: 12px;
@@ -260,11 +260,11 @@ nav .main-menu li a:hover{
     z-index: 1;
 }
 
-.banar-area .heading .portfolio:hover{
+.banar-area .heading .portfoliobtn:hover{
     color: #fff;
 }
 
-.banar-area .heading .portfolio::after{
+.banar-area .heading .portfoliobtn::after{
     position: absolute;
     content: "";
     width: 100%;
@@ -280,7 +280,7 @@ nav .main-menu li a:hover{
     visibility: hidden;
 }
 
-.banar-area .heading .portfolio:hover::after{
+.banar-area .heading .portfoliobtn:hover::after{
     visibility: visible;
     transform: scaleX(1);
     transition: .4s;
