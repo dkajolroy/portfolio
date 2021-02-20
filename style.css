@@ -31,6 +31,12 @@
 
 /* --------------------------- 1. Typography --------------------*/
 
+@font-face {
+    font-family: Century Gothic;
+    src: url(fonts/gothicb.woff);
+    font-weight: bold;
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -63,6 +69,7 @@ a{
 p{
     color: #fff;
 }
+
 
 .width{
     width: 80%;
@@ -139,6 +146,26 @@ nav .logo h1 span{
 nav .main-menu li{
     display: inline-block;
     padding: 20px 0;
+    position: relative;
+}
+
+nav .main-menu li::after{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 1px;
+    left: 15%;
+    bottom: 30%;
+    background-color: rgba(255, 217, 0, 0.857);
+    transition: .4s;
+    transform: scaleX(0);
+    transform-origin: center;
+    visibility: hidden;
+}
+
+nav .main-menu li:hover::after{
+    transform: scaleX(1);
+    visibility: visible;
 }
 
 nav .main-menu li a{
@@ -148,8 +175,7 @@ nav .main-menu li a{
 }
 
 nav .main-menu li a:hover{
-    color: #77e154;
-    background-color: rgba(255, 255, 255, 0.172);
+    color: #00ff48;
     border-radius: 5px;
 }
 
