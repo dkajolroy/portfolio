@@ -52,6 +52,7 @@ h2{font-weight: bold; max-width: 55%; margin: 0 auto;}
 h6{color: tomato; margin: 10px 0;}
 ul{ 
     list-style: none;
+    padding: 0;
 }
 
 a{
@@ -104,6 +105,7 @@ p{
     top: 50%;
     transform: translateY(-50%);
 }
+
 
 
 /* ----------------- 2. Header-area
@@ -295,7 +297,7 @@ nav .main-menu li a:hover{
     content: "";
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background: linear-gradient(to right, #23263a,#6364ca);
     left: 0;
     top: 0;
     z-index: -1;
@@ -350,9 +352,57 @@ nav .main-menu li a:hover{
     margin: 20px auto;
 }
 
-.service .bottom .item img{
-    width: 40px;
+.service .bottom .icon .img{
+    height: 60px;
+    width: 60px;
+    background-image: url(images/icons/Untitled-1.png);
+    transition: .4s;
 }
+
+
+.service .bottom .wdesign .img{
+    background-position: 180px 0;
+}
+
+.service .bottom .adevelopement .img{
+    background-position: 120px 0;
+}
+
+.service .bottom .udesigner .img{
+    background-position: 300px 0;
+}
+
+.service .bottom .rdesign .img{
+    background-position: 480px 0;
+}
+
+.service .bottom .andeveloper .img{
+    background-position: 360px 0;
+}
+
+.service .bottom .item:hover .wdevelopement .img{
+    background-position: 0 60px;
+}
+
+.service .bottom .item:hover .wdesign .img{
+    background-position: 180px 60px;
+}
+
+.service .bottom .item:hover .adevelopement .img{
+    background-position: 120px 60px;
+}
+
+.service .bottom .item:hover .udesigner .img{
+    background-position: 300px 60px;
+}
+.service .bottom .item:hover .rdesign .img{
+    background-position: 480px 60px;
+}
+.service .bottom .item:hover .andeveloper .img{
+    background-position: 360px 60px;
+}
+
+
 
 .service .bottom .item h4{
     font-size: 18px;
@@ -363,6 +413,10 @@ nav .main-menu li a:hover{
 .service .bottom .item p{
     font-size: 13px;
 }
+
+
+
+
 
 
 
@@ -402,30 +456,6 @@ nav .main-menu li a:hover{
     font-weight: bold;
     font-size: 40px;
 }
-
-
-/* ----------------- 4. Portfolio section ------------------ */
-
-
-.portfolio{
-    background-color: #23263A;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -564,3 +594,220 @@ nav .main-menu li a:hover{
     background-color: rgb(112, 118, 163);
     color: #fff;
 }
+
+
+/* ----------------- 4. Portfolio section ------------------ */
+
+
+.portfolio{
+    padding: 50px 0;
+    background-color: #1F2235;
+}
+
+.portfolio .top{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------- About section ------------------ */
+
+
+.about{
+    padding: 50px;
+    text-align: center;
+    background-color:  #23263A;
+}
+
+
+
+
+
+
+
+/* ----------------- Contact section ------------------ */
+
+.contact{
+    padding: 50px;
+    text-align: center;
+    background-color: #1F2235;
+}
+
+.contact .bottom{
+    margin-top: 50px;
+}
+
+.contact .bottom form textarea,
+.contact .bottom form input{
+    display: block;
+    color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #313657;
+    border: none;
+}
+
+.contact .bottom form .man,
+.contact .bottom form .mail{
+    height: 10px;
+    width: 95%;
+}
+
+.contact .bottom form textarea{
+    width: 95%;
+    height: 170px;
+}
+
+
+.contact .bottom .button-sub{
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    width: 170px;
+    padding: 10px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    transition: .2s;
+}
+
+.contact .bottom .button-sub:hover{
+    background-color: transparent;
+}
+
+.contact .bottom .right{
+    text-align: left;
+    color: #fff;
+}
+.contact .bottom .right p{
+    max-width: 100%;
+    font-size: 13px;/*! = */
+    margin: 10px auto;
+}
+
+.contact .bottom .right h4{
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.contact .bottom .right i{
+    float: left;
+    font-size: 25px;
+    padding: 4px;
+    margin-right: 5px;
+    color: #6472ca;
+}
+
+
+
+
+
+/* ----------------- Quate section ------------------ */
+
+.quate{
+    padding: 80px 0;
+    background:linear-gradient(#313657, #23263A);
+}
+
+.quate h3{
+    font-weight: 600;
+    font-size: 35px;
+    padding: 20px 0;
+}
+
+.quate a{
+    font-weight: 600;
+    float: right;
+    padding: 15px 50px;
+    background:transparent;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    position: relative;
+    z-index: 1;
+    top: 25%;
+}
+
+.quate a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background:linear-gradient(to right,#384386, #997070);
+    border-radius: 30px;
+    transition: .4s;
+    z-index: -1;
+}
+
+.quate a:hover{
+    color: #ffff;
+}
+
+.quate a:hover::after{
+    width: 100%;
+}
+
+.quate P{
+    font-size: 13px;
+}
+
+
+
+
+/* ----------------- Footer Area
+ ------------------ */
+
+ footer{
+     background-color: #23263A;
+     position: relative;
+     overflow: hidden;
+ }
+
+ footer ul{
+     list-style: none;
+     text-align: center;
+ }
+
+ footer ul li{
+     display: inline-block;
+     width: 30px ;
+     height: 30px;
+     border-radius: 5px;
+     background-color: #3d4ba2;
+     font-size: 20px;
+ }
+
+ footer ul li:hover i{
+     color: #fff;
+     text-shadow:0px 0px 10px #000;
+     transform: rotate(400deg);
+     transition: .4s;
+ }
+
+ footer P{
+     text-align: center;
+     color: #ffff;
+
+ }
+
+ .tscroll{
+     position: absolute;
+     width: 20px;
+     height: 50px;
+     right: 0;
+     background-color: rgb(182, 162, 162);
+ }
+ 
